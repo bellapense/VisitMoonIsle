@@ -1,0 +1,182 @@
+/* Styles on every page */
+@font-face {
+    font-family: 'FinkHeavy';
+    src: url('../fonts/FinkHeavy.woff') format('woff2'),
+    url('../fonts/FinkHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: url('../images/ac-background.jpg') repeat #A8A6B1;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    max-width: 1280px;
+    width: 100%;
+    z-index: 2;
+}
+
+#banner-logo {
+    background: url("../images/moon-isle-header.jpg") center no-repeat;
+}
+
+#logo {
+    height: 500px;
+}
+
+.fancy {
+    font-family: 'Morga', cursive;
+    font-weight: lighter;
+    font-size: 0.5em;
+}
+
+h1 {
+    font-family: 'FinkHeavy', serif;
+    font-size: 5em;
+    color: #BFD7E2;
+}
+
+h2 {
+    font-family: 'FinkHeavy', serif;
+    color: #99ADB6;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+nav a {
+    display: block;
+    padding: 1.25em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    background: url("../images/mocha-grunge.png") #141126;
+    font-family: 'FinkHeavy', serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #D7EBF4;
+    z-index: 6;
+}
+
+nav a:hover{
+    background-color: #262049;
+}
+
+nav a.selected {
+    background-color: #040307;
+    cursor: default;
+}
+
+#banner-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url("../images/welcome.JPG");
+    height: 600px;
+    margin-top: -6em;
+    padding-top: 3em;
+    margin-bottom: 0;
+}
+
+#banner-heading > h1 {
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    justify-self: flex-start;
+}
+
+#banner-heading > h2 {
+    background: rgba(0, 0, 0, 0.3);
+    justify-self: flex-end;
+    margin-bottom: 0;
+    padding: 0.2em;
+    color: #D7EBF4
+}
+
+#content {
+    z-index: 5;
+    margin-top: 0;
+    width: 100%;
+    max-width: 1280px;
+    color: #BFD7E2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    margin-top: 1em;
+    width: 100%;
+    color: #050815;
+    font-family: 'FinkHeavy', serif;
+    margin-bottom: 1em;
+}
+
+#copyright > a {
+    color: #050815;
+}
+
+#copyright > a:hover {
+    color: #131d4a;
+}
+
+/* General common styles */
+.big-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.big-image > img {
+    width: 100%;
+}
+
+.big-image > h2 {
+    background: rgba(0, 0, 0, 0.3);
+    justify-self: flex-end;
+    margin-bottom: 0;
+    padding: 0.2em;
+}
+
+/* General common layouts */
+.three-col-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+
+}
+
+.three-col-container > div {
+    flex: 0 30%;
+}
+
+.three-col-container > div.big {
+    flex: 0 60%;
+}
+.three-col-container > div.extra-big {
+    flex: 0 100%;
+}
+
+.item {
+    width: 100%;
+    padding: 1em;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.item > img {
+    width: 100%;
+}

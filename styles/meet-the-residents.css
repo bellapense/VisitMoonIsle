@@ -1,0 +1,110 @@
+#banner-heading {
+    background-image: url("../images/meet-2.jpeg");
+}
+
+#banner-heading > h2 {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.item > table {
+    margin: 0 auto;
+    width: 80%;
+}
+
+thead > tr > td {
+    font-family: 'FinkHeavy', serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+    background: rgba(38, 32, 73, 0.5);
+    border: 5px double #99ADB6;
+}
+
+
+tbody > tr > td {
+    padding: 0.5em;
+    border: #99ADB6 solid 2px;
+}
+
+tbody > tr > :first-child {
+    font-family: 'FinkHeavy', serif;
+    font-size: 1.2em;
+    text-align: right;
+    background: rgba(38, 32, 73, 0.5);
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+tbody > tr > :nth-child(2) {
+    background: rgba(38, 32, 73, 0.3);
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+.item.extra-big > h2, .item.extra-big > p {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    width: 97.5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #D7EBF4;
+    font-family: 'FinkHeavy', serif;
+}
+
+.item.extra-big {
+    position: relative;
+    text-align: center;
+}
+
+.item.extra-big > p {
+    bottom: 1em;
+    font-size: 1.2em;
+}
+
+.item.big {
+    text-align: center;
+}
+
+.item.big > h2 {
+    color: #D7EBF4;
+}
+
+#animated {
+    width: 100%;
+}
+
+#ready:hover + #plane {
+    animation-name: myanimation;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+#plane {
+    height: 50px;
+    float: left;
+}
+
+#ready {
+    text-decoration: none;
+    font-family: 'FinkHeavy', serif;
+    font-size: 1.5em;
+    display: block;
+    color: #b3cdd9;
+}
+
+#ready:hover {
+    color: #d3d0e9;
+}
+
+@keyframes myanimation {
+    from {
+        margin-right: 0;
+    }
+
+    to {
+        margin-left: 90%;
+    }
+}
