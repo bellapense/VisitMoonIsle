@@ -1,6 +1,16 @@
+.item > p {
+    text-align: justify;
+}
 
+.item > a {
+    color: #bab8c3;
+    text-decoration: none;
+}
 
+.item > a:hover {
+    color: #d3d0e9;
+}
 
-
-
-
+.item.half {
+    flex: 0 45%;
+}

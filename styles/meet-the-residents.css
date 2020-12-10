@@ -41,44 +41,13 @@ tbody > tr > :nth-child(2) {
     border-top-right-radius: 20%;
 }
 
-.item.extra-big > h2, .item.extra-big > p {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    width: 97.5%;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: #D7EBF4;
-    font-family: 'FinkHeavy', serif;
-}
-
-.item.extra-big {
-    position: relative;
-    text-align: center;
-}
-
-.item.extra-big > p {
-    bottom: 1em;
-    font-size: 1.2em;
-}
-
-.item.big {
-    text-align: center;
-}
-
-.item.big > h2 {
-    color: #D7EBF4;
-}
-
 #animated {
     width: 100%;
 }
 
 #ready:hover + #plane {
     animation-name: myanimation;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 

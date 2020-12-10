@@ -1,3 +1,61 @@
 #banner-heading {
     background-image: url("../images/visit.jpeg");
 }
+
+#visitor-request-form {
+    width: fit-content;
+    padding: 1em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 1em auto;
+}
+
+h2, a {
+    color: #D7EBF4;
+}
+
+#visitor-request-form > p {
+    max-width: 30em;
+    margin: 1em auto;
+    text-align: justify;
+}
+
+form {
+    margin: 1em auto;
+    text-align: left;
+    max-width: 40em;
+    width: fit-content;
+}
+
+label, input {
+    display: block;
+}
+
+input[type=text] {
+    padding: 0.5em;
+    width: 25em;
+    min-width: fit-content;
+}
+
+textarea {
+    width: 100%;
+}
+
+.field {
+    margin: 0.5em auto;
+}
+
+#submit-area {
+    text-align: center;
+}
+
+#submit-area > h3 {
+    font-family: 'FinkHeavy', serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#form-submit {
+    max-width: 200px;
+    margin: 0.5em auto;
+}
