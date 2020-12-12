@@ -1,13 +1,13 @@
 #banner-heading {
-    background-image: url("../images/shopping.JPG");
+    background-image: url("../images/background-images/shopping.JPG");
 }
 
 .shop-hours {
     font-family: 'FinkHeavy', serif;
     font-size: 1.2em;
-    color: #99ADB6;
+    color: #BFD7E2;
 }
 
 i {
-    color: #99ADB6;
+    color: #BFD7E2;
 }

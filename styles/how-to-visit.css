@@ -1,16 +1,17 @@
 #banner-heading {
-    background-image: url("../images/visit.jpeg");
+    background-image: url("../images/background-images/visit.jpeg");
 }
 
 #visitor-request-form {
     width: fit-content;
-    padding: 1em;
+    padding: 1em 2em;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: url("../images/background-images/wavecut.png") rgba(8, 7, 17, 0.8);
     margin: 1em auto;
+    color: #D7EBF4;
 }
 
-h2, a {
+a {
     color: #D7EBF4;
 }
 
@@ -23,7 +24,7 @@ h2, a {
 form {
     margin: 1em auto;
     text-align: left;
-    max-width: 40em;
+    max-width: 25em;
     width: fit-content;
 }
 
@@ -34,11 +35,11 @@ label, input {
 input[type=text] {
     padding: 0.5em;
     width: 25em;
-    min-width: fit-content;
 }
 
 textarea {
-    width: 100%;
+    padding: 0.5em;
+    width: 25em;
 }
 
 .field {
@@ -55,7 +56,16 @@ textarea {
     margin-bottom: 0.5em;
 }
 
-#form-submit {
-    max-width: 200px;
+button, input[type="submit"]{
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background: url("../images/icons-and-logos/visit-moon-isle-logo.png") center no-repeat;
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
     margin: 0.5em auto;
 }

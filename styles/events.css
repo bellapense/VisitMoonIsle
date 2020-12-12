@@ -1,12 +1,12 @@
 #banner-heading {
-    background-image: url("../images/current-events.jpeg");
+    background-image: url("../images/background-images/current-events.jpeg");
 }
 
 .three-col-container {
     align-items: center;
 }
 
-h3, h2 {
+h3 {
     font-family: 'FinkHeavy', serif;
     color: #d3d0e9;
 }

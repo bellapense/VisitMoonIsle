@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url('../images/ac-background.jpg') repeat #A8A6B1;
+    background: url('../images/background-images/ac-background.jpg') repeat #A8A6B1;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -24,7 +24,7 @@ header {
 }
 
 #banner-logo {
-    background: url("../images/moon-isle-header.jpg") center no-repeat;
+    background: url("../images/icons-and-logos/moon-isle-header.jpg") center no-repeat;
 }
 
 #logo {
@@ -46,7 +46,8 @@ h1 {
 
 h2 {
     font-family: 'FinkHeavy', serif;
-    color: #99ADB6;
+    text-align: center;
+    color: #BFD7E2;
 }
 
 nav {
@@ -61,7 +62,7 @@ nav a {
     padding: 1.25em;
     margin-bottom: 2em;
     margin-right: 1em;
-    background: url("../images/mocha-grunge.png") #141126;
+    background: url("../images/background-images/mocha-grunge.png") #141126;
     font-family: 'FinkHeavy', serif;
     font-size: 1.2em;
     text-decoration: none;
@@ -84,7 +85,7 @@ nav a.selected {
     justify-content: space-between;
     background-repeat: no-repeat;
     background-position: top;
-    background-image: url("../images/welcome.JPG");
+    background-image: url("../images/background-images/welcome.JPG");
     height: 600px;
     margin-top: -6em;
     padding-top: 3em;
@@ -102,7 +103,7 @@ nav a.selected {
     justify-self: flex-end;
     margin-bottom: 0;
     padding: 0.2em;
-    color: #D7EBF4
+    color: #D7EBF4;
 }
 
 #content {
@@ -110,7 +111,7 @@ nav a.selected {
     margin-top: 0;
     width: 100%;
     max-width: 1280px;
-    color: #BFD7E2;
+    color: #D7EBF4;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -123,11 +124,11 @@ footer {
 }
 
 #copyright > a {
-    color: #050815;
+    color: #131d4a;
 }
 
 #copyright > a:hover {
-    color: #131d4a;
+    color: #283672;
 }
 
 /* General common styles */
@@ -157,17 +158,24 @@ footer {
     width: 100%;
     padding: 1em;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: url("../images/background-images/wavecut.png") rgba(8, 7, 17, 0.8);
+    /*background: rgba(0, 0, 0, 0.7);*/
     margin-top: 1em;
     margin-bottom: 1em;
-}
-
-.item > h2 {
-    text-align: center;
+    color: #D7EBF4;
 }
 
 .item > img {
     width: 100%;
+}
+
+.item > a, p > a {
+    color: #bab8c3;
+    text-decoration: none;
+}
+
+.item > a:hover, p > a:hover {
+    color: #d3d0e9;
 }
 
 .item.extra-big > h2, .item.extra-big > p {
@@ -179,7 +187,6 @@ footer {
     width: 97.6%;
     padding-top: 1em;
     padding-bottom: 1em;
-    color: #D7EBF4;
     font-family: 'FinkHeavy', serif;
 }
 
@@ -195,10 +202,6 @@ footer {
 
 .item.big {
     text-align: center;
-}
-
-.item.big > h2 {
-    color: #D7EBF4;
 }
 
 .two-col-container {
