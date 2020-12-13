@@ -1,4 +1,6 @@
-/* Styles on every page */
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Styles on every page
+ * * * * * * * * * * * * * * * * * * * * * * * * * */
 @font-face {
     font-family: 'FinkHeavy';
     src: url('../fonts/FinkHeavy.woff') format('woff2'),
@@ -17,6 +19,7 @@ body {
     text-align: center;
 }
 
+/* Header & Logo */
 header {
     max-width: 1280px;
     width: 100%;
@@ -32,24 +35,7 @@ header {
     width: 100%;
 }
 
-.fancy {
-    font-family: 'Morga', cursive;
-    font-weight: lighter;
-    font-size: 0.5em;
-}
-
-h1 {
-    font-family: 'FinkHeavy', serif;
-    font-size: 5em;
-    color: #BFD7E2;
-}
-
-h2 {
-    font-family: 'FinkHeavy', serif;
-    text-align: center;
-    color: #BFD7E2;
-}
-
+/* Navigation */
 nav {
     display: flex;
     flex-direction: row;
@@ -61,7 +47,8 @@ nav a {
     display: block;
     padding: 1.25em;
     margin-bottom: 2em;
-    margin-right: 1em;
+    margin-right: 0.75em;
+    margin-left: 0.75em;
     background: url("../images/background-images/mocha-grunge.png") #141126;
     font-family: 'FinkHeavy', serif;
     font-size: 1.2em;
@@ -79,12 +66,18 @@ nav a.selected {
     cursor: default;
 }
 
+#show-nav {
+    display: none;
+    visibility: hidden;
+}
+
+/* Page banner header */
 #banner-heading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-image: url("../images/background-images/welcome.JPG");
     height: 600px;
     margin-top: -6em;
@@ -106,6 +99,19 @@ nav a.selected {
     color: #D7EBF4;
 }
 
+h1 {
+    font-family: 'FinkHeavy', serif;
+    font-size: 5em;
+    color: #BFD7E2;
+}
+
+.fancy {
+    font-family: 'Morga', cursive;
+    font-weight: lighter;
+    font-size: 0.5em;
+}
+
+/* Page content */
 #content {
     z-index: 5;
     margin-top: 0;
@@ -114,6 +120,8 @@ nav a.selected {
     color: #D7EBF4;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Footer */
 
 footer {
     margin-top: 1em;
@@ -132,9 +140,13 @@ footer {
 }
 
 /* General common styles */
+h2 {
+    font-family: 'FinkHeavy', serif;
+    text-align: center;
+    color: #BFD7E2;
+}
 
-
-/* General common layouts */
+/* Three column layout */
 .three-col-container {
     display: flex;
     flex-direction: row;
@@ -154,12 +166,15 @@ footer {
     flex: 0 100%;
 }
 
+.item.big {
+    text-align: center;
+}
+
 .item {
     width: 100%;
     padding: 1em;
     text-align: center;
     background: url("../images/background-images/wavecut.png") rgba(8, 7, 17, 0.8);
-    /*background: rgba(0, 0, 0, 0.7);*/
     margin-top: 1em;
     margin-bottom: 1em;
     color: #D7EBF4;
@@ -178,32 +193,7 @@ footer {
     color: #d3d0e9;
 }
 
-.item.extra-big > h2, .item.extra-big > p {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    width: 97.6%;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-family: 'FinkHeavy', serif;
-}
-
-.item.extra-big {
-    position: relative;
-    text-align: center;
-}
-
-.item.extra-big > p {
-    bottom: 1em;
-    font-size: 1.2em;
-}
-
-.item.big {
-    text-align: center;
-}
-
+/* Two column layout */
 .two-col-container {
     display: flex;
     flex-direction: row;
@@ -215,3 +205,224 @@ footer {
 .two-col-container > div {
     flex: 0 45%;
 }
+
+.two-col-container > div.big {
+    flex: 0 60%
+}
+
+.two-col-container > div.small {
+    flex: 0 30%;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Responsive styles
+ * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media screen and (max-width: 1150px) {
+    nav {
+        justify-content: space-between;
+    }
+    nav a {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    div.single {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #logo {
+        max-width: 450px;
+    }
+    .three-col-container > div {
+        flex: 0 45%;
+    }
+    .three-col-container > div.big {
+        flex: 0 100%;
+    }
+    .reposition {
+        order: -1;
+    }
+    .two-col-container > div {
+        flex: 0 80%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    header {
+        position: relative;
+    }
+    #logo {
+        max-width: 400px;
+        margin-top: -2em;
+        margin-bottom: 0;
+        float: left;
+    }
+    #banner-logo {
+        height: 350px;
+        margin-top: 2em;
+    }
+    #banner-heading {
+        clear: left;
+        padding-top: 0;
+    }
+    nav {
+        justify-content: center;
+        position: absolute;
+        width: 55%;
+        top: 10%;
+        right: 0;
+    }
+    nav a {
+        margin-right: 0.25em;
+        margin-left: 0.25em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    #logo {
+        max-width: 350px;
+    }
+    #banner-logo {
+        height: 300px;
+    }
+    #banner-heading {
+        height: 400px;
+        background-size: 100%;
+        padding-top: 0;
+    }
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #banner-heading {
+        height: 400px;
+        background-position: center;
+        background-size: 120%;
+        padding-top: 0;
+        margin-top: 1em;
+    }
+    nav {
+        justify-content: flex-end;
+        width: 50%;
+        top: 5%;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+    }
+    nav a {
+        margin-right: 0.2em;
+        margin-left: 0.2em;
+        margin-bottom: 0.25em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #logo {
+        float: unset;
+        padding-top: 0.5em;
+    }
+    #banner-logo {
+        height: 425px;
+    }
+    #show-nav {
+        position: relative;
+        visibility: unset;
+        border: none;
+        padding: 1.25em 1.25em 1em;
+        margin: 0.75em auto 0 auto;
+        width: 95%;
+        text-align: center;
+        display: block;
+        background: url("../images/background-images/mocha-grunge.png") rgba(20, 17, 38, 0.3);
+        font-family: 'FinkHeavy', serif;
+        font-size: 1.2em;
+        color: #D7EBF4;
+        vertical-align: middle;
+    }
+    #show-nav > img {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        width: 1.5em;
+    }
+    nav {
+        flex-direction: row;
+        width: 100%;
+        position: unset;
+        padding-top: 0.5em;
+        align-items: center;
+        margin: -0.25em auto 0 auto;
+        justify-content: center;
+        background: url("../images/background-images/wavecut.png") #141126;
+    }
+    nav a {
+        flex: 1 35%;
+        margin: 0.5em;
+    }
+    nav.hidden {
+        visibility: hidden;
+        display: none;
+    }
+    .two-col-container > div.item {
+        flex: 0 95%;
+    }
+    .three-col-container > div.item {
+        flex: 0 80%;
+    }
+    .three-col-container > div.item.big {
+        flex: 0 100%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #banner-heading {
+        background-size: 130%;
+        height: 350px;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+    #banner-heading > h2 {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #banner-heading {
+        background-size: 130%;
+        height: 300px;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+    #banner-heading > h2 {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #banner-heading {
+        background-size: 130%;
+        height: 300px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+    #banner-heading > h2 {
+        font-size: 1.25em;
+    }
+    .two-col-container > div.item {
+        flex: 0 100%;
+    }
+    .three-col-container > div.item {
+        flex: 0 90%;
+    }
+    .three-col-container > div.item.big {
+        flex: 0 100%;
+    }
+}
+

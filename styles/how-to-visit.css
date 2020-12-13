@@ -3,7 +3,8 @@
 }
 
 #visitor-request-form {
-    width: fit-content;
+    width: 60%;
+    min-width: fit-content;
     padding: 1em 2em;
     text-align: center;
     background: url("../images/background-images/wavecut.png") rgba(8, 7, 17, 0.8);

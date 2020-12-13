@@ -1,5 +1,5 @@
 #banner-heading {
-    background-image: url("../images/background-images/group-photo.jpeg");
+    background: url("../images/background-images/group-photo.jpeg") center;
 }
 
 .item > table {
