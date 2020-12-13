@@ -57,7 +57,7 @@ textarea {
     margin-bottom: 0.5em;
 }
 
-button, input[type="submit"]{
+#form-submit, input[type="submit"]{
     color: inherit;
     border: none;
     padding: 0;
@@ -69,4 +69,10 @@ button, input[type="submit"]{
     width: 150px;
     height: 150px;
     margin: 0.5em auto;
+}
+
+@media screen and (max-width: 470px) {
+    textarea, input[type=text] {
+        width: 95%;
+    }
 }

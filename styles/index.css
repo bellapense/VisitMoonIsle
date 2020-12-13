@@ -18,3 +18,10 @@
 .item > a:hover, p > a:hover {
     color: #d3d0e9;
 }
+
+@media screen and (max-width: 430px) {
+    #banner-heading{
+        background-image: url("../images/background-images/welcome-mobile.JPG");
+        background-size: 120%;
+    }
+}

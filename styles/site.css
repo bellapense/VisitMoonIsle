@@ -13,10 +13,15 @@
 body {
     background: url('../images/background-images/ac-background.jpg') repeat #A8A6B1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-flow: wrap;
     justify-content: center;
     text-align: center;
+}
+
+img.mobile {
+    display: none;
+    visibility: hidden;
 }
 
 /* Header & Logo */
@@ -41,6 +46,11 @@ nav {
     flex-direction: row;
     justify-content: center;
     flex-flow: wrap;
+    background: url("../images/background-images/wavecut.png") rgba(8, 7, 17, 0.8);
+    padding-top: 1em;
+    margin: 0 auto;
+    width: fit-content;
+    height: 6em;
 }
 
 nav a {
@@ -80,8 +90,6 @@ nav a.selected {
     background-position: center;
     background-image: url("../images/background-images/welcome.JPG");
     height: 600px;
-    margin-top: -6em;
-    padding-top: 3em;
     margin-bottom: 0;
 }
 
@@ -122,21 +130,25 @@ h1 {
 }
 
 /* Footer */
-
 footer {
-    margin-top: 1em;
     width: 100%;
-    color: #050815;
+    max-width: 1280px;
+    color: #c6d8e0;
     font-family: 'FinkHeavy', serif;
-    margin-bottom: 1em;
+    background: url("../images/background-images/ocean.png");
+    height: 100px;
+}
+
+footer > p {
+    margin-top: 75px;
 }
 
 #copyright > a {
-    color: #131d4a;
+    color: #babecf;
 }
 
 #copyright > a:hover {
-    color: #283672;
+    color: #dde1f5;
 }
 
 /* General common styles */
@@ -219,7 +231,8 @@ h2 {
  * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media screen and (max-width: 1150px) {
     nav {
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 100%;
     }
     nav a {
         margin-right: 0;
@@ -272,6 +285,9 @@ h2 {
         width: 55%;
         top: 10%;
         right: 0;
+        background: none;
+        height: unset;
+        padding-top: 0;
     }
     nav a {
         margin-right: 0.25em;
@@ -405,9 +421,8 @@ h2 {
 
 @media screen and (max-width: 430px) {
     #banner-heading {
-        background-size: 130%;
-        height: 300px;
-        width: 100%;
+        height: 425px;
+        background-size: unset;
     }
     h1 {
         font-size: 3.5em;
@@ -424,5 +439,33 @@ h2 {
     .three-col-container > div.item.big {
         flex: 0 100%;
     }
+    img.responsive {
+        display: none;
+        visibility: hidden;
+    }
+    img.mobile {
+        display: block;
+        visibility: unset;
+    }
 }
 
+@media screen and (max-width: 350px) {
+    #banner-heading {
+        height: 350px;
+    }
+    #banner-logo {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #banner-heading {
+        height: 300px;
+    }
+    #banner-logo {
+        height: 375px;
+    }
+    nav {
+        margin-top: -1.5em;
+    }
+}

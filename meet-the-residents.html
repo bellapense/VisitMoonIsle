@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/navigation.js"></script>
     <link rel="stylesheet" href="styles/site.css">
     <link rel="stylesheet" href="styles/meet-the-residents.css">
     <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
@@ -12,8 +13,11 @@
 <header>
     <div id="banner-logo">
         <img id="logo" src="images/icons-and-logos/visit-moon-isle-logo.png" alt="moon isle logo">
+        <button type="button" id="show-nav" onclick="openNav()">
+            Menu<img src="images/icons-and-logos/open.png" alt="Menu Icon">
+        </button>
     </div>
-    <nav>
+    <nav class="hidden">
         <a href="index.html">Home</a>
         <a href="#" class="selected">Meet the Residents</a>
         <a href="attractions.html">Attractions</a>
@@ -118,7 +122,8 @@
         </div>
         <div class="item big">
             <h2>Bella</h2>
-            <img src="images/villagers/me.jpeg" alt="Bella">
+            <img class="responsive" src="images/villagers/me.jpeg" alt="Bella">
+            <img class="mobile" src="images/villagers/me-mobile.jpeg" alt="Bella">
             <p>Moon Isle's Island Representative</p>
         </div>
         <div class="item reposition">
@@ -318,7 +323,8 @@
             </table>
         </div>
         <div class="item extra-big">
-            <img src="images/villagers/silly-group-photo.jpeg" alt="silly group photo">
+            <img class="responsive" src="images/villagers/silly-group-photo.jpeg" alt="silly group photo">
+            <img class="mobile" src="images/villagers/silly-group-photo-mobile.jpeg" alt="silly group photo">
             <h2>We'd love to meet you and show you what makes Moon Isle so amazing!</h2>
                 <div id="animated">
                     <a id="ready" href="how-to-visit.html">Show me how to visit!</a>
