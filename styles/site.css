@@ -131,16 +131,19 @@ h1 {
 
 /* Footer */
 footer {
+    position: relative;
     width: 100%;
     max-width: 1280px;
     color: #c6d8e0;
     font-family: 'FinkHeavy', serif;
     background: url("../images/background-images/ocean.png");
-    height: 100px;
+    height: 125px;
 }
 
 footer > p {
-    margin-top: 75px;
+    position: absolute;
+    width: 100%;
+    bottom: 0.25em;
 }
 
 #copyright > a {
@@ -224,6 +227,10 @@ h2 {
 
 .two-col-container > div.small {
     flex: 0 30%;
+}
+
+.two-col-container > div.large {
+    flex: 0 100%;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -384,6 +391,15 @@ h2 {
     }
     .two-col-container > div.item {
         flex: 0 95%;
+    }
+    .two-col-container > div.item.small {
+        flex: 0 90%;
+    }
+    .two-col-container > div.item.big {
+        flex: 0 95%;
+    }
+    .two-col-container > div.item.large {
+        flex: 0 100%;
     }
     .three-col-container > div.item {
         flex: 0 80%;

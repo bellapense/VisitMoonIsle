@@ -9,14 +9,9 @@
 .item.big > p {
     text-align: center;
 }
-
-.item > a {
-    color: #bab8c3;
-    text-decoration: none;
-}
-
-.item > a:hover, p > a:hover {
-    color: #d3d0e9;
+div.item > a{
+    display: block;
+    margin-top: 0.5em;
 }
 
 @media screen and (max-width: 430px) {

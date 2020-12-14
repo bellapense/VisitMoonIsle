@@ -1,4 +1,11 @@
 #banner-heading {
-    background-image: url("../images/background-images/explore.jpg");
-    background-position: right;
+    background-image: url("../images/background-images/explore-moon-isle.jpeg");
+    background-position: center;
+}
+
+@media screen and (max-width: 430px) {
+    #banner-heading{
+        background-image: url("../images/background-images/explore-moon-isle-mobile.jpeg");
+        background-size: 130%;
+    }
 }
