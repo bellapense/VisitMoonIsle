@@ -28,7 +28,6 @@ img.mobile {
 header {
     max-width: 1280px;
     width: 100%;
-    z-index: 2;
 }
 
 #banner-logo {
@@ -64,7 +63,6 @@ nav a {
     font-size: 1.2em;
     text-decoration: none;
     color: #D7EBF4;
-    z-index: 6;
 }
 
 nav a:hover{
@@ -121,7 +119,6 @@ h1 {
 
 /* Page content */
 #content {
-    z-index: 5;
     margin-top: 0;
     width: 100%;
     max-width: 1280px;
